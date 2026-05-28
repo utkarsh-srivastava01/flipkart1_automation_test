@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcase.flipkasrtsearchpagetest">
+      <class name="com.flipkart.testcase.flipkasrtsearchpagetest">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
           <include name="verifyProductSearch"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testcase.flipkasrtsearchpagetest -->
+      </class> <!-- com.flipkart.testcase.flipkasrtsearchpagetest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

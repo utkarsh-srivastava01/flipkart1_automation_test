@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="baseclass.baseclass"/>
-      <class name="testcase.flipkasrtsearchpagetest"/>
+      <class name="com.flipkart.stepdefinition.FlipkartSearchSteps"/>
+      <class name="com.flipkart.baseclass.baseclass"/>
+      <class name="com.flipkart.testcase.flipkasrtsearchpagetest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
