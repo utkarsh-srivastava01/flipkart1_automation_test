@@ -1,9 +1,8 @@
+
 package com.flipkart.baseclass;
 
-import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -11,12 +10,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class baseclass {
 
-    public WebDriver driver;      // Global driver
+    public WebDriver driver;
 
     @BeforeMethod
-    public void setup()
-    {
-        WebDriverManager.chromedriver().setup();
+    public void setup() {
+
+        WebDriverManager.chromedriver().clearDriverCache().setup();
 
         driver = new ChromeDriver();
 
@@ -25,12 +24,12 @@ public class baseclass {
         driver.get("https://www.flipkart.com/");
     }
 
-
     @AfterMethod
-	
-    public void tearDown()
-    {
-        driver.quit();
-    }
+    public void tearDown() {
 
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
+
