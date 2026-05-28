@@ -70,11 +70,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.test</groupId>
-            <artifactId>SeleniumDemo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+       
     </dependencies>
 
     <build>
