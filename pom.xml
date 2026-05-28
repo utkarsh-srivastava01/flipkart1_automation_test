@@ -88,10 +88,8 @@
             <scope>provided</scope>
         </dependency>
 
-<<<<<<< HEAD
-=======
-       
->>>>>>> 6d952ca8dd7e69d6fb16e89d85471f3d97c53c12
+
+
     </dependencies>
 
     <build>
@@ -125,7 +123,4 @@
     </build>
 
 </project>
-<<<<<<< HEAD
 
-=======
->>>>>>> 6d952ca8dd7e69d6fb16e89d85471f3d97c53c12
