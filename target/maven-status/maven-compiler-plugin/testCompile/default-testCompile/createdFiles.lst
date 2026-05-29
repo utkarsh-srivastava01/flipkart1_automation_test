@@ -1,7 +1,7 @@
 com\flipkart\pages\buynow.class
 com\flipkart\pages\productselection.class
-com\flipkart\runner\testrunner.class
 com\flipkart\testcase\flipkasrtsearchpagetest.class
 com\flipkart\pages\FlipkartSearchPage.class
 com\flipkart\stepdefinition\FlipkartSearchSteps.class
 com\flipkart\pages\loginnumberenter.class
+com\flipkart\runner\TestRunner.class
