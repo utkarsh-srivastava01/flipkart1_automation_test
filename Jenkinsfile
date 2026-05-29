@@ -12,7 +12,7 @@ stages {
     stage('Git Checkout') {
         steps {
             git branch: 'main',
-            url: 'https://github.com/utkarsh-srivastava01/flipkart_automation_test.git'
+                url: 'https://github.com/utkarsh-srivastava01/flipkart_automation_test.git'
         }
     }
 
@@ -22,7 +22,7 @@ stages {
         }
     }
 
-    stage('Run Cucumber Tests') {
+    stage('Run Tests') {
         steps {
             bat 'mvn test'
         }
@@ -34,8 +34,8 @@ stages {
                 allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'target/cucumber-reports',
-                reportFiles: 'cucumber.html',
+                reportDir: 'src/test/resources/Reports',
+                reportFiles: 'cucumber-reports.html',
                 reportName: 'Flipkart Cucumber Report'
             ])
         }
@@ -60,7 +60,7 @@ post {
     always {
 
         archiveArtifacts(
-            artifacts: 'target/cucumber-reports/*, target/surefire-reports/*',
+            artifacts: 'src/test/resources/Reports/*',
             allowEmptyArchive: true
         )
 
@@ -69,10 +69,10 @@ post {
     }
 
     success {
-        echo 'Flipkart Automation Execution Successful'
+        echo 'Pipeline Executed Successfully'
     }
 
     failure {
-        echo 'Flipkart Automation Execution Failed'
+        echo 'Pipeline Failed'
     }
 }
