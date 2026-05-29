@@ -3,8 +3,8 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK21'
-        maven 'Maven3'
+        jdk 'jdk21'
+        maven 'Maven12'
     }
 
     stages {
@@ -41,18 +41,7 @@ pipeline {
             }
         }
 
-        stage('Generate Cucumber Report') {
-            steps {
-                publishHTML([
-                    allowMissing: true,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'target/cucumber-reports',
-                    reportFiles: 'cucumber.html',
-                    reportName: 'Cucumber Report'
-                ])
-            }
-        }
+       
 
     }
 
