@@ -15,8 +15,8 @@ pipeline {
         stage('Git Checkout') {
 
             steps {
-
-                git 'https://github.com/utkarsh-srivastava01/flipkart_automation_test.git'
+               git branch: 'main',
+               url: 'https://github.com/utkarsh-srivastava01/flipkart_automation_test.git'
 
             }
 
