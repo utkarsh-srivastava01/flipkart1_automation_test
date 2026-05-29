@@ -18,7 +18,8 @@ public class buynow {
 		rm=new SeleniumUtility(driver);
 		
 	}
-	@FindBy(xpath="/html/body/div[1]/div/div[1]/div/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div[2]/div/div[15]/div/div/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div/div[2]")
+	@FindBy(xpath= "/html/body/div[1]/div/div[1]/div/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div[2]/div/div[16]/div/div/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div/div[2]")
+	
 	WebElement buyn;
 public void buy() {
 	buyn.click();
