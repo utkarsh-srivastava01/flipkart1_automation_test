@@ -12,7 +12,7 @@ stages {
     stage('Git Checkout') {
         steps {
             git branch: 'main',
-                url: 'https://github.com/utkarsh-srivastava01/flipkart_automation_test.git'
+                url: 'https://github.com/utkarsh-srivastava01/flipkart1_automation_test.git'
         }
     }
 
